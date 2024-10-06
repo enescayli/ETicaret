@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "u36XG/WI3js=",
+  "success": true,
+  "projectFilePath": "/Users/enescayli/RiderProjects/Eticaret/Presentation/Eticaret.API/Eticaret.API.csproj",
+  "expectedPackageFiles": [
+    "/Users/enescayli/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/enescayli/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0-rc.1.24431.7/microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.1.24431.7.nupkg.sha512",
+    "/Users/enescayli/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/enescayli/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/enescayli/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/enescayli/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/enescayli/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

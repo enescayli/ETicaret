@@ -1,0 +1,11 @@
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/bin/Debug/net8.0/Eticaret.Domain.deps.json
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/bin/Debug/net8.0/Eticaret.Domain.dll
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/bin/Debug/net8.0/Eticaret.Domain.pdb
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/Eticaret.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/Eticaret.Domain.AssemblyInfoInputs.cache
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/Eticaret.Domain.AssemblyInfo.cs
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/Eticaret.Domain.csproj.CoreCompileInputs.cache
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/Eticaret.Domain.dll
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/refint/Eticaret.Domain.dll
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/Eticaret.Domain.pdb
+/Users/enescayli/RiderProjects/Eticaret/Core/Eticaret.Domain/obj/Debug/net8.0/ref/Eticaret.Domain.dll

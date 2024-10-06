@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9lIB+KGiOPw=",
+  "success": true,
+  "projectFilePath": "/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Persistence/Eticaret.Persistence.csproj",
+  "expectedPackageFiles": [
+    "/Users/enescayli/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0-rc.1.24431.7/microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.1.24431.7.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/bin/Debug/net8.0/Eticaret.Infrastructure.deps.json
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/bin/Debug/net8.0/Eticaret.Infrastructure.dll
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/bin/Debug/net8.0/Eticaret.Infrastructure.pdb
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/bin/Debug/net8.0/Eticaret.Application.dll
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/bin/Debug/net8.0/Eticaret.Domain.dll
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/bin/Debug/net8.0/Eticaret.Application.pdb
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/bin/Debug/net8.0/Eticaret.Domain.pdb
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.Infrastructure.csproj.AssemblyReference.cache
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.Infrastructure.AssemblyInfoInputs.cache
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.Infrastructure.AssemblyInfo.cs
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.621B7C9B.Up2Date
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.Infrastructure.dll
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/refint/Eticaret.Infrastructure.dll
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/Eticaret.Infrastructure.pdb
+/Users/enescayli/RiderProjects/Eticaret/Infrastructure/Eticaret.Infrastructure/obj/Debug/net8.0/ref/Eticaret.Infrastructure.dll
