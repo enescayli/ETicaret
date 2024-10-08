@@ -22,6 +22,7 @@ public class ProductsController : Controller
     [HttpGet]
     public async Task Get()
     {
+        /*
         await _productWriteRepository.AddRangeAsync(new()
         {
             new()
@@ -29,7 +30,16 @@ public class ProductsController : Controller
             
         });
         
-        await _productWriteRepository.SaveAsync();
+        await _productWriteRepository.SaveAsync();  */
+        
+        /*
+       var p =  await _productReadRepository.GetByIdAsync("3a61fbbb-6a8f-467b-a010-d88c69b390e1", false);
+       if (p != null)
+       {
+           p.Name = "Ürün XYZ";
+           await _productWriteRepository.SaveAsync(); tracking false olduğu için kaydetmeyecek.
+       }
+        */
     }
 
     [HttpGet("{id}")]
