@@ -1,6 +1,6 @@
 namespace Eticaret.Application.Repositories.Product;
 
-public class IProductReafRepository
+public interface IProductReadRepository : IReadRepository<Domain.Entities.Product>
 {
     
 }

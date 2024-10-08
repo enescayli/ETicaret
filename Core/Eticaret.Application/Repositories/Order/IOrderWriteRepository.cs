@@ -1,6 +1,6 @@
 namespace Eticaret.Application.Repositories.Order;
 
-public class IOrderWriteRepository
+public interface IOrderWriteRepository : IWriteRepository<Domain.Entities.Order>
 {
     
 }

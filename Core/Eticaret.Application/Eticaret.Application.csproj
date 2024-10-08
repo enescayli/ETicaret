@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Eticaret.Domain\Eticaret.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-rc.1.24451.1" />
+    </ItemGroup>
+
 </Project>

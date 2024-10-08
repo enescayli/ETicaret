@@ -4,7 +4,7 @@ namespace Eticaret.Persistence;
 
 static class Configuration
 {
-    static public string? ConnectionString
+    public static string? ConnectionString
     {
         get
         {

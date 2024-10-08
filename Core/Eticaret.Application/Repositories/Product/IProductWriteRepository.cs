@@ -1,6 +1,6 @@
 namespace Eticaret.Application.Repositories.Product;
 
-public class IProductWriteRepository
+public interface IProductWriteRepository : IWriteRepository<Domain.Entities.Product>
 {
     
 }

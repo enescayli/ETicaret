@@ -1,6 +1,6 @@
-namespace Eticaret.Application.Repositories.Customer;
+namespace Eticaret.Application.Repositories;
 
-public class ICustomerWriteRepository
+public interface ICustomerWriteRepository : IWriteRepository<Domain.Entities.Customer>
 {
     
 }
