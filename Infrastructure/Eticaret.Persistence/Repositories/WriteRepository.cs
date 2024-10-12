@@ -49,9 +49,6 @@ public class WriteRepository<T> : IWriteRepository<T> where T :  BaseEntity
     public bool Update(T model)
     {
       EntityEntry entityEntry =  Table.Update(model);    
-      
-      model.UpdateDate = DateTime.UtcNow;
-      //model.updatedUser ?? 
       return entityEntry.State == EntityState.Modified;
     }
 
