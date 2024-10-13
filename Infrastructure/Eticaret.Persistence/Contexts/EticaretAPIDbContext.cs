@@ -23,7 +23,8 @@ public class EticaretApiDbContext : DbContext
            _= item.State switch
            {
                EntityState.Added => item.Entity.CreateDate = DateTime.UtcNow,
-               EntityState.Modified => item.Entity.UpdateDate = DateTime.UtcNow
+               EntityState.Modified => item.Entity.UpdateDate = DateTime.UtcNow,
+               _ => DateTime.UtcNow
            }; 
        }
        return await base.SaveChangesAsync(cancellationToken);

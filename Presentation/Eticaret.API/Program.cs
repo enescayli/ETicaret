@@ -1,11 +1,32 @@
+using System.Reflection;
+using Eticaret.Application.Validators.Products;
 using Eticaret.Persistence;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Infrastructure.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices();
+builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
+    .ConfigureApiBehaviorOptions(
+        (options => options.SuppressModelStateInvalidFilter = true));     
+
+
+builder.Services.AddFluentValidationAutoValidation()
+    .AddFluentValidationClientsideAdapters().
+    AddValidatorsFromAssembly(typeof(ValidateCreateProduct).Assembly);
+
+
+
+//builder.Services.AddValidatorsFromAssembly(typeof(ValidateCreateProduct).Assembly);
+
+
+
+
 builder.Services.AddCors(
     options => options.AddDefaultPolicy(
-        policy => policy.WithOrigins(
+        policy => policy.WithOrigins( 
             "http:\\localhost:4200", 
             "http://localhost:4200").AllowAnyHeader().AllowAnyMethod()));
 
