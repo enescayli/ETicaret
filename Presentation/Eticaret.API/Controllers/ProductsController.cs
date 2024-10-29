@@ -16,11 +16,17 @@ public class ProductsController : Controller
 {
     private readonly IProductWriteRepository _productWriteRepository;
     private readonly IProductReadRepository _productReadRepository;
+    private readonly IWebHostEnvironment _webHostEnvironment;
     
-    public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
+    public ProductsController(
+        IProductWriteRepository productWriteRepository, 
+        IProductReadRepository productReadRepository,
+        IWebHostEnvironment webHostEnvironment
+        )
     {
         _productWriteRepository = productWriteRepository;
         _productReadRepository = productReadRepository;
+        _webHostEnvironment = webHostEnvironment;
     }
     
     // GET
@@ -87,5 +93,34 @@ public class ProductsController : Controller
         await _productWriteRepository.RemoveAsync(id);
         await _productWriteRepository.SaveAsync();
         return Ok();
+    }
+    [HttpPost("[action]")] //controller/action
+    public async Task<IActionResult> Upload()
+    {
+        string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource/product-images");   
+        
+        if(!Directory.Exists(uploadPath))
+            Directory.CreateDirectory(uploadPath);
+        Random r = new Random();
+        foreach (var file in Request.Form.Files)
+        {
+            try
+            {
+                var specificFileName = (DateTime.Now + r.Next(10000,99999).ToString() +"." +file.FileName).Replace(" ","");
+                var fullPath = Path.Combine(uploadPath, specificFileName);
+                
+                using FileStream fileStream = new (fullPath, FileMode.Create, FileAccess.Write, FileShare.None, 1024* 1024);
+                await file.CopyToAsync(fileStream);
+                await fileStream.FlushAsync();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+        
+        return Ok();
+   
     }
 }

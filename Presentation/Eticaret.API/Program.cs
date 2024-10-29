@@ -27,7 +27,8 @@ builder.Services.AddFluentValidationAutoValidation()
 builder.Services.AddCors(
     options => options.AddDefaultPolicy(
         policy => policy.WithOrigins( 
-            "http:\\localhost:4200", 
+            "http:\\localhost:4200",
+            "http://192.168.1.4:4200", 
             "http://localhost:4200").AllowAnyHeader().AllowAnyMethod()));
 
 builder.Services.AddControllers();
@@ -43,6 +44,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
 app.UseCors();
 app.UseHttpsRedirection();
 
