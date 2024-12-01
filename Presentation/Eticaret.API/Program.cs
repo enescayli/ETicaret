@@ -4,10 +4,12 @@ using Eticaret.Persistence;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Infrastructure.Filters;
+using Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices();
+builder.Services.AddInfrastructureServices();
 builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
     .ConfigureApiBehaviorOptions(
         (options => options.SuppressModelStateInvalidFilter = true));     

@@ -4,6 +4,7 @@ using Eticaret.Application.Repositories;
 using Eticaret.Application.Repositories.Order;
 using Eticaret.Application.Repositories.Product;
 using Eticaret.Application.RequestParameters;
+using Eticaret.Application.Services;
 using Eticaret.Application.ViewModels.Products;
 using Eticaret.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -17,16 +18,19 @@ public class ProductsController : Controller
     private readonly IProductWriteRepository _productWriteRepository;
     private readonly IProductReadRepository _productReadRepository;
     private readonly IWebHostEnvironment _webHostEnvironment;
+    private readonly IFileService _fileService;
     
     public ProductsController(
         IProductWriteRepository productWriteRepository, 
         IProductReadRepository productReadRepository,
-        IWebHostEnvironment webHostEnvironment
+        IWebHostEnvironment webHostEnvironment,
+        IFileService fileService
         )
     {
         _productWriteRepository = productWriteRepository;
         _productReadRepository = productReadRepository;
         _webHostEnvironment = webHostEnvironment;
+        _fileService = fileService;
     }
     
     // GET
@@ -97,8 +101,11 @@ public class ProductsController : Controller
     [HttpPost("[action]")] //controller/action
     public async Task<IActionResult> Upload()
     {
-        string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource/product-images");   
-        
+        await _fileService.UploadAsync("resource/product-images", Request.Form.Files);
+        return Ok();
+        /*
+        string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource/product-images");
+
         if(!Directory.Exists(uploadPath))
             Directory.CreateDirectory(uploadPath);
         Random r = new Random();
@@ -108,7 +115,7 @@ public class ProductsController : Controller
             {
                 var specificFileName = (DateTime.Now + r.Next(10000,99999).ToString() +"." +file.FileName).Replace(" ","");
                 var fullPath = Path.Combine(uploadPath, specificFileName);
-                
+
                 using FileStream fileStream = new (fullPath, FileMode.Create, FileAccess.Write, FileShare.None, 1024* 1024);
                 await file.CopyToAsync(fileStream);
                 await fileStream.FlushAsync();
@@ -119,8 +126,8 @@ public class ProductsController : Controller
                 throw;
             }
         }
-        
+
         return Ok();
-   
+        */
     }
 }
