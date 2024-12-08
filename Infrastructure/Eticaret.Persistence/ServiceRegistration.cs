@@ -4,6 +4,7 @@ using Eticaret.Application.Repositories.Order;
 using Eticaret.Application.Repositories.Product;
 using Eticaret.Persistence.Concretes;
 using Eticaret.Persistence.Contexts;
+using Eticaret.Persistence.Repositories;
 using Eticaret.Persistence.Repositories.Customer;
 using Eticaret.Persistence.Repositories.Order;
 using Eticaret.Persistence.Repositories.Product;
@@ -26,6 +27,12 @@ public static class ServiceRegistration
         services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
         services.AddScoped<IOrderReadRepository, OrderReadRepository>();
         services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+        services.AddScoped<IFileReadRepository, FileReadRepository>();
+        services.AddScoped<IFileWriteRepository, FileWriteRepository>();
+        services.AddScoped<IInvoiceFileReadRepository, InvoinceFileReadRepository>();
+        services.AddScoped<IInvoiceFileWriteRepository, InvoinceFileWriteRepository>();
+        services.AddScoped<IProductImageFileReadRepository, ProductImageFileReadRepository>();
+        services.AddScoped<IProductIMageFileWriteRepository, ProductImageFileWriteRepository>();
 
         // services.AddSingleton<IProductService, ProductService>();
     }

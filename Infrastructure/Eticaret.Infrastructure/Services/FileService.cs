@@ -27,9 +27,14 @@ public class FileService : IFileService
         {
             string fileNewName =  FileRename(file.FileName, uploadedPath);
             bool result = await CopyFileAsync(Path.Combine(uploadedPath, fileNewName), file);
-            if (!result)
-                data.Add((fileNewName, Path.Combine(uploadedPath, fileNewName)));
-            else throw new Exception();
+            if (result)
+            {
+                data.Add((fileNewName, Path.Combine(path, fileNewName)));
+            }
+            else
+            {
+                 //throw new Exception();
+            }
             // to do: exception log?
         }
         
